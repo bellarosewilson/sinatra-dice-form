@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dice Roll Result</title>
+</head>
+<body>
+    <h1><%= @num_dice %>d<%= @num_sides %></h1>
+    <ol>
+        <% @rolls.each do |roll| %>
+            <li><%= roll %></li>
+        <% end %>
+    </ol>
+    <a href="/">Roll again</a>
+</body>
+</html>
